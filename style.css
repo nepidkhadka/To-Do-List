@@ -61,25 +61,25 @@ button:hover{
 #tasks {
     max-height: 400px;
     height: auto;
-
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     cursor: pointer;
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: #001220;
+    color: whitesmoke;
     text-transform: capitalize;
     text-align: left;
     overflow: overlay;
 }
 
 #tasks :nth-child(odd){
-    background-color:rebeccapurple;
-
+    background-color:#021220;
+    color: whitesmoke;
 }
 
 
 #tasks :nth-child(1){
-    margin: 0 !important;
+    margin-bottom: 10px !important;
 }
 
 .individual-task{
@@ -105,19 +105,20 @@ button:hover{
 
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
-  }
+    width: 4px;
+    height: 4px;
+}
   
   /* Track */
   ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px;
+    border-radius: 5px;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #FBAE3C; 
-    border-radius: 50px;
+    background: #ff9900; 
+    border-radius: 5px;
   }
   
   /* Handle on hover */

@@ -1,127 +1,122 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: url(Images/bg.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url(Images/bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
-.container{
-    min-width: 380px;
-    width: 30%;
-    height: auto;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top:50%;
-    left:50%;
-    background-color: #fff;
-    border-radius: 10px;
+.container {
+  min-width: 380px;
+  width: 30%;
+  height: auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  border-radius: 10px;
 }
-
 
 .mytask {
-    display: flex;
-    width: 100%;
-    margin-block: 20px;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  width: 100%;
+  margin-block: 20px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-input{
-    width: 60%;
-    padding: 12px 10px;
-    border-radius: 10px;
-    font-size: 15px;
-    border: 1.5px solid #d58815;
-    outline:none;
-    font-size: 0.9rem;;
-    
-
+input {
+  width: 60%;
+  padding: 12px 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  border: 1.5px solid #d58815;
+  outline: none;
+  font-size: 0.9rem;
 }
 
-button{
-    border: none;
-    padding: 12px 30px;
-    border-radius: 16px;
-    background: #FBAE3C;
-    color: #001220;
-    font-size: 18px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+button {
+  border: none;
+  padding: 12px 30px;
+  border-radius: 16px;
+  background: #fbae3c;
+  color: #001220;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-button:hover{
-    background:#d58815;
-
+button:hover {
+  background: #d58815;
 }
-
 
 #tasks {
-    max-height: 400px;
-    height: auto;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: whitesmoke;
-    text-transform: capitalize;
-    text-align: left;
-    overflow: overlay;
+  max-height: 400px;
+  height: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: whitesmoke;
+  text-transform: capitalize;
+  text-align: left;
+  overflow: overlay;
 }
 
-#tasks :nth-child(odd){
-    background-color:#021220;
-    color: whitesmoke;
+#tasks :nth-child(odd) {
+  background-color: #021220;
+  color: whitesmoke;
 }
 
-
-#tasks :nth-child(1){
-    margin-bottom: 10px !important;
+#tasks :nth-child(1) {
+  margin-bottom: 10px !important;
 }
 
-.individual-task{
-    margin:10px 0 10px;
-    min-height: 40px;
-    width: 90%;
-    border-radius: 5px;
-    background-color: #FBAE3C;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    padding: 5px 10px;
-    color: #001220;
-    text-transform:capitalize;
-    text-align: left;
-    font-weight:lighter;
-    overflow:overlay ;
-    font-size: 1.5rem;
+.individual-task {
+  margin: 10px 0 10px;
+  min-height: 40px;
+  width: 90%;
+  border-radius: 5px;
+  background-color: #fbae3c;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  color: whitesmoke;
+  text-transform: capitalize;
+  text-align: left;
+  font-weight: lighter;
+  overflow: overlay;
+  font-size: 1.5rem;
 }
-
 
 /* Custom ScrollBar */
 
 /* width */
 ::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
+  width: 4px;
+  height: 4px;
 }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 5px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #ff9900; 
-    border-radius: 5px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #b30000; 
-  }
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff9900;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}

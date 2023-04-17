@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  min-width: 450px;
+  min-width: 400px;
   width: 30%;
   height: auto;
   position: absolute;
@@ -19,6 +19,16 @@ body {
   left: 50%;
   background-color: #fff;
   border-radius: 10px;
+}
+
+p{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-family:cursive;
+  color: #fbae3c;
+  font-weight: bold;
+  margin-block: 10px;
 }
 
 .mytask {
@@ -30,7 +40,7 @@ body {
 }
 
 input {
-  width: 60%;
+  width: 65%;
   padding: 12px 10px;
   border-radius: 10px;
   font-size: 15px;
@@ -41,7 +51,7 @@ input {
 
 #btn {
   border: none;
-  padding: 12px 30px;
+  padding: 12px 25px;
   border-radius: 16px;
   background: #fbae3c;
   color: #fff;
@@ -51,14 +61,21 @@ input {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-#deletebtn {
-  width: 10%;
-  padding: 8px 8px;
+.deletebtn {
+  width: 8%;
+  padding: 5px 5px;
   border-radius: 16px;
   background:#dfdfdf;
   font-size: 1.8rem;
   color: #000;
   text-align: center;
+  transition: 0.2s ease-in-out;
+}
+
+.deletebtn:hover {
+  background:#E43030;
+  color: #fff;
+  font-size: 1.9rem;
 }
 
 #btn:hover {
@@ -81,8 +98,8 @@ input {
 
 .task-list {
   display: flex;
-  width: 90%;
-  justify-content: space-between;
+  width: 95%;
+  justify-content: space-around;
   align-items: center;
 }
 

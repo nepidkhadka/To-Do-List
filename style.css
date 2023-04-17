@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  min-width: 380px;
+  min-width: 450px;
   width: 30%;
   height: auto;
   position: absolute;
@@ -39,19 +39,29 @@ input {
   font-size: 0.9rem;
 }
 
-button {
+#btn {
   border: none;
   padding: 12px 30px;
   border-radius: 16px;
   background: #fbae3c;
-  color: #001220;
-  font-size: 18px;
+  color: #fff;
+  font-size: 1.2rem;
   font-weight: 500;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-button:hover {
+#deletebtn {
+  width: 10%;
+  padding: 8px 8px;
+  border-radius: 16px;
+  background:#dfdfdf;
+  font-size: 1.8rem;
+  color: #000;
+  text-align: center;
+}
+
+#btn:hover {
   background: #d58815;
 }
 
@@ -69,19 +79,21 @@ button:hover {
   overflow: overlay;
 }
 
-#tasks :nth-child(odd) {
-  background-color: #021220;
-  color: whitesmoke;
+.task-list {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#tasks :nth-child(1) {
+/* #tasks :nth-child(1) {
   margin-bottom: 10px !important;
-}
+} */
 
 .individual-task {
   margin: 10px 0 10px;
   min-height: 40px;
-  width: 90%;
+  width: 75%;
   border-radius: 5px;
   background-color: #fbae3c;
   cursor: pointer;
@@ -119,4 +131,10 @@ button:hover {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000;
+}
+
+@-moz-document url-prefix() {
+  #tasks {
+    overflow: scroll;
+  }
 }

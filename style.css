@@ -155,3 +155,25 @@ input {
     overflow: scroll;
   }
 }
+
+
+@media only screen and (max-width: 600px) {
+
+  .container {
+    min-width: 340px;
+  }
+
+  p {
+    font-size: 1.4rem;
+}
+
+#btn {
+  font-size: 1rem;
+}
+
+.deletebtn {
+  padding: 8px 8px;
+  font-size: 1.6rem;
+}
+
+}

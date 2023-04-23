@@ -18,10 +18,20 @@ const addfunction = (event) => {
       </div>
       `;
       inputdata.value = "";
+
+    // Local Storage 
+      const tasklist = document.querySelectorAll(".individual-task");
+      console.log(tasklist);
+      const taskindex = tasklist.length-1;
+      console.log(taskindex);
+      taskdata = tasklist[taskindex].textContent;
+      console.log(taskdata)
+      localStorage.setItem(taskindex,taskdata);
+
+
+      // Delete Part
       const delete_task = document.querySelectorAll(".deletebtn");
-      console.log(delete_task);
       delete_task.forEach((btn) =>{
-      console.log(btn);
         btn.addEventListener("click", ()=>{
           btn.parentNode.remove();
         })
@@ -30,6 +40,9 @@ const addfunction = (event) => {
   }
 };
 
+// Event Call
+
 inputdata.addEventListener("keypress", addfunction);
 mybtn.addEventListener("click", addfunction);
+
 
